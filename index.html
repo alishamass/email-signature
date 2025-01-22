@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        opacity: 0.9;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        color: white;
+        font-family: "Inter", serif;
+      }
+      .container {
+        display: flex;
+        padding: 27px 44px;
+        background-color: #0c0c11;
+        gap: 60px;
+        width: 800px;
+        height: 293px;
+        align-items: center;
+      }
+
+      .title-div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 24px;
+        border-bottom: 1px #212126 solid;
+      }
+
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .contact-div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-card {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .contact-card-loc {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: normal;
+        color: #92929d;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .icon {
+        width: 17.5px;
+        height: 16.5px;
+      }
+
+      .profile {
+        width: 152px;
+        height: 152px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+      .logo {
+        width: 161px;
+        height: 21px;
+      }
+      .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: center;
+        align-items: center;
+      }
+
+      .social-media {
+        width: 31px;
+        height: 31px;
+      }
+
+      .social-media-div {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          height: 648px;
+          width: 286px;
+          flex-direction: column-reverse;
+          gap: 24px;
+          align-items: flex-start;
+          padding: 27px;
+          justify-content: flex-end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-container">
+        <img class="profile" src="./assets/Rita.png" alt="" />
+        <a href=" https://coinquant.ai" target="_blank">
+          <img class="logo" src="./assets/logo.svg" alt="" />
+        </a>
+
+        <div class="social-media-div">
+          <a href="https://x.com/CoinQuantCQ" target="_blank">
+            <img src="./assets/twitter.png" class="social-media" alt="" />
+          </a>
+          <a
+            href="
+          https://www.youtube.com/@CoinQuant"
+            target="_blank"
+          >
+            <img src="./assets/youtube.png" class="social-media" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="title-div">
+          <h2>Rita Nohra</h2>
+          <h3>Executive Assistant & Office Manager</h3>
+        </div>
+        <div class="contact-div">
+          <a href="tel:+96170 685 055" class="call-button" target="_blank">
+            <div class="contact-card">
+              <img src="./assets/phone.svg" alt="" />
+              <p>(961) 70 685 055</p>
+            </div>
+          </a>
+          <a href="mailto:rita.nohra@coinquant.co" target="_blank">
+            <div class="contact-card">
+              <img src="./assets/email.svg" alt="" />
+              <p>rita.nohra@coinquant.co</p>
+            </div>
+          </a>
+          <a href="http://coinquant.ai">
+            <div class="contact-card">
+              <img src="./assets/web.svg" alt="" />
+              <p>www.coinquant.ai</p>
+            </div>
+          </a>
+          <a
+            href="https://www.google.com/maps/place/BDD+1288/@33.8905163,35.5035227,17z/data=!3m1!4b1!4m6!3m5!1s0x151f17f41610f6d7:0x4ed8a5315fe9dd64!8m2!3d33.8905119!4d35.5060976!16s%2Fg%2F11rmr_0rtw?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            <div class="contact-card-loc">
+              <img src="./assets/location.svg" alt="" />
+              <p>BDD Bldg 1288, 7th Floor, Beirut, Lebanon</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
